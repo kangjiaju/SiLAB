@@ -1,0 +1,79 @@
+{
+  "templates": [
+    {
+      "id": "student",
+      "name": "学生",
+      "background": "大学在读学生",
+      "attributes": [
+        { "key": "年龄", "value": "20" },
+        { "key": "专业", "value": "计算机科学" },
+        { "key": "学习动机", "value": "高" }
+      ],
+      "tags": ["学生", "本科生"],
+      "behaviorRules": [
+        { "id": "1", "condition": "被提问", "action": "尝试回答问题" },
+        { "id": "2", "condition": "不理解", "action": "询问老师" }
+      ]
+    },
+    {
+      "id": "teacher",
+      "name": "教师",
+      "background": "大学教授",
+      "attributes": [
+        { "key": "年龄", "value": "40" },
+        { "key": "学科", "value": "心理学" },
+        { "key": "教学经验", "value": "15年" }
+      ],
+      "tags": ["教师", "教授"],
+      "behaviorRules": [
+        { "id": "1", "condition": "学生提问", "action": "详细解答" },
+        { "id": "2", "condition": "课程结束", "action": "布置作业" }
+      ]
+    },
+    {
+      "id": "entrepreneur",
+      "name": "企业家",
+      "background": "科技公司创始人",
+      "attributes": [
+        { "key": "年龄", "value": "35" },
+        { "key": "行业", "value": "人工智能" },
+        { "key": "管理经验", "value": "10年" }
+      ],
+      "tags": ["企业家", "创始人"],
+      "behaviorRules": [
+        { "id": "1", "condition": "遇到商业机会", "action": "评估风险和收益" },
+        { "id": "2", "condition": "团队有冲突", "action": "进行调解" }
+      ]
+    },
+    {
+      "id": "researcher",
+      "name": "研究员",
+      "background": "社会科学研究员",
+      "attributes": [
+        { "key": "年龄", "value": "32" },
+        { "key": "研究领域", "value": "社会心理学" },
+        { "key": "发表论文数", "value": "15" }
+      ],
+      "tags": ["研究员", "学者"],
+      "behaviorRules": [
+        { "id": "1", "condition": "发现新数据", "action": "进行分析" },
+        { "id": "2", "condition": "研究结果不符预期", "action": "重新设计实验" }
+      ]
+    },
+    {
+      "id": "politician",
+      "name": "政治家",
+      "background": "地方政府官员",
+      "attributes": [
+        { "key": "年龄", "value": "50" },
+        { "key": "职位", "value": "市长" },
+        { "key": "从政年限", "value": "20年" }
+      ],
+      "tags": ["政治家", "公职人员"],
+      "behaviorRules": [
+        { "id": "1", "condition": "面对公众质疑", "action": "召开新闻发布会" },
+        { "id": "2", "condition": "遇到紧急事件", "action": "组织应急会议" }
+      ]
+    }
+  ]
+}
